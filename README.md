@@ -31,6 +31,8 @@ module "vpc" {
 - On success, module will provide two Outputs:
   - DNS name of "Application Load Balancer" (so you could check the deployment)
   - DNS name of "S3 Bucket"
+```
 Outputs:
 alb_dns_name = micro-alb-1629301761.us-east-1.elb.amazonaws.com
 s3_bucket_domain_name = tf-s3-test-micro-bucket.s3.amazonaws.com
+```
