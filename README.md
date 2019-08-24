@@ -11,7 +11,8 @@
 - The instances will have a read only access to this bucket
 
 ##### Module Inputs:
-- Please find the list of arguments you will need to specify to the module
+- Please find the list of arguments you will need to specify to use the module:
+```
 module "vpc" {
   source                  = "./vpc"
   region                  = "us-east-1"
@@ -24,7 +25,7 @@ module "vpc" {
   ec2_spot_price          = "0.0035"
   ec2_name_prefix         = "micro"
 }
-
+```
 - Please note that you will need to specify at least 2 "Public" CIDR ranges for the "vpc_subnet_cidr_public" variable, otherwise "AWS ALB/LB" will bring errror (the requirements for the deply by the AWS is a minimum of 2 x Availability Zones)
 
 ##### Module Outputs:
